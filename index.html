@@ -51,22 +51,34 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">Jun 3, 2024</span>
-									<h2><a href="#">My Name is Pranay Chhagan Dhoble</a></h2>
-									<p>Computer Science Engineer || Salesforce Developer || Full Stack Java Developer || Working on IOT Devices || Working With RTMNU Incubation Center</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://www.linkedin.com/in/pranay-dhoble/" class="button large">Check It Out</a></li>
-								</ul>
-								<p> I am a final-year Computer Science Engineering student focused on Full Stack Java Development and IoT. 
-									I create IoT projects, design PCBs with KiCad, and 3D print models using Fusion 360. I invented FUZION, 
-									a hybrid device combining mobile, desktop, and projector features. I also interned in Salesforce Development 
-									at CSM IT Services. Currently, I am working with the RTMNU Incubation Center.
-								</p>
-							</article>
+						<article class="post featured">
+							<header class="major">
+								<span class="date" id="current-date"></span>
+								<h2><a href="#">My Name is Pranay Chhagan Dhoble</a></h2>
+								<p>Computer Science Engineer || Salesforce Developer || Full Stack Java Developer || Working on IoT Devices || Working With RTMNU Incubation Center</p>
+							</header>
+							<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+							<ul class="actions special">
+								<li><a href="https://www.linkedin.com/in/pranay-dhoble/" class="button large">Check It Out</a></li>
+							</ul>
+							<p>
+								I am a final-year Computer Science Engineering student focused on Full Stack Java Development and IoT. 
+								I create IoT projects, design PCBs with KiCad, and 3D print models using Fusion 360. I invented FUZION, 
+								a hybrid device combining mobile, desktop, and projector features. I also interned in Salesforce Development 
+								at CSM IT Services. Currently, I am working with the RTMNU Incubation Center.
+							</p>
+						</article>
+					
+						<script>
+							function updateDate() {
+								const dateElement = document.getElementById('current-date');
+								const currentDate = new Date();
+								const options = { year: 'numeric', month: 'short', day: 'numeric' };
+								dateElement.textContent = currentDate.toLocaleDateString(undefined, options);
+							}
+					
+							updateDate();
+						</script>
 
 						<!-- Posts -->
 							<section class="posts">
